@@ -67,7 +67,7 @@ float LTR329ALS01::readLux() {
   do {
     status = readStatus();
     DEBUG_LTR329("LTR329 STATUS REG: 0b");
-    DEBUG_LTR329(status.raw, BIN);
+    DEBUG_LTR329(status.raw);
     DEBUG_LTR329("\n");
 
     if (millis() > readTimeout) {
